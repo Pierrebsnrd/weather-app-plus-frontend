@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunset" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ea580c;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#sunset)" />
+
+  <!-- Sun -->
+  <circle cx="200" cy="180" r="45" fill="#fbbf24" opacity="0.9" />
+
+  <!-- Sun rays -->
+  <g stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <line x1="200" y1="110" x2="200" y2="130" />
+    <line x1="200" y1="230" x2="200" y2="250" />
+    <line x1="130" y1="180" x2="150" y2="180" />
+    <line x1="250" y1="180" x2="270" y2="180" />
+    <line x1="155" y1="135" x2="170" y2="150" />
+    <line x1="230" y1="210" x2="245" y2="225" />
+    <line x1="245" y1="135" x2="230" y2="150" />
+    <line x1="170" y1="210" x2="155" y2="225" />
+  </g>
+
+  <!-- Cloud -->
+  <g fill="url(#cloud)">
+    <circle cx="280" cy="280" r="35" />
+    <circle cx="320" cy="270" r="45" />
+    <circle cx="360" cy="280" r="35" />
+    <circle cx="340" cy="310" r="40" />
+    <circle cx="300" cy="315" r="30" />
+  </g>
+
+  <!-- Weather symbols -->
+  <g stroke="#94a3b8" stroke-width="3" fill="none" opacity="0.6">
+    <!-- Temperature indicator -->
+    <rect x="380" y="380" width="8" height="40" rx="4" fill="#dc2626" />
+    <circle cx="384" cy="430" r="8" fill="#dc2626" />
+
+    <!-- Wind lines -->
+    <path d="M320 350 L380 350" stroke-linecap="round" />
+    <path d="M330 370 L390 370" stroke-linecap="round" />
+    <path d="M325 390 L385 390" stroke-linecap="round" />
+  </g>
+
+  <!-- App name -->
+  <text x="256" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white" opacity="0.9">WeatherApp+</text>
+</svg>
